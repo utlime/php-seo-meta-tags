@@ -41,9 +41,9 @@ class OpenGraphBuilderTest extends TestCase
     {
         yield [
             [
+                'og:type'     => 'website',
                 'title'       => 'stub title',
                 'description' => 'stub description',
-                'og:type'     => 'website'
             ],
             __DIR__ . '/assets/OpenGraphBuilder1.xml',
         ];

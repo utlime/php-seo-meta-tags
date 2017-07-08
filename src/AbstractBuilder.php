@@ -24,9 +24,11 @@ abstract class AbstractBuilder implements BuilderInterface
     /**
      * AbstractBuilder constructor.
      */
-    public function __construct()
+    public final function __construct()
     {
-        $this->meta = new \SimpleXMLElement('<meta/>');
+        $this->meta = new \SimpleXMLIterator('<meta/>');
+
+        $this->init();
     }
 
     /**
@@ -39,7 +41,7 @@ abstract class AbstractBuilder implements BuilderInterface
         }
 
         if (array_key_exists($name, $this->rules)) {
-            call_user_func($this->rules[$name], $this->meta, $name, $value);
+            call_user_func($this->rules[$name], $value, $name);
         }
 
         return $this;
@@ -50,7 +52,13 @@ abstract class AbstractBuilder implements BuilderInterface
      */
     public final function build()
     {
-        return $this->meta->children()->asXML();
+        $build = '';
+
+        for($this->meta->rewind(); $this->meta->valid(); $this->meta->next() ) {
+            $build .= $this->meta->current()->asXML();
+        }
+
+        return $build;
     }
 
     /**
@@ -75,5 +83,21 @@ abstract class AbstractBuilder implements BuilderInterface
         $this->rules[$name] = $callable;
 
         return $this;
+    }
+
+    /**
+     * @return \SimpleXMLElement
+     */
+    protected final function getMeta()
+    {
+        return $this->meta;
+    }
+
+    /**
+     * Init rules and aliases
+     */
+    protected function init()
+    {
+
     }
 }

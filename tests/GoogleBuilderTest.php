@@ -41,8 +41,9 @@ class GoogleBuilderTest extends TestCase
     {
         yield [
             [
-                'name'        => 'stub title',
+                'title'       => 'stub title',
                 'description' => 'stub description',
+
             ],
             __DIR__ . '/assets/GoogleBuilder1.xml',
         ];

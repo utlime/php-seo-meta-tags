@@ -41,9 +41,9 @@ class TwitterBuilderTest extends TestCase
     {
         yield [
             [
+                'twitter:card' => 'summary',
                 'title'        => 'stub title',
                 'description'  => 'stub description',
-                'twitter:card' => 'summary'
             ],
             __DIR__ . '/assets/TwitterBuilder1.xml',
         ];

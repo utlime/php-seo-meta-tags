@@ -47,10 +47,10 @@ class BuilderDelegateTest extends TestCase
     {
         yield [
             [
-                'title'       => 'stub title',
-                'description' => 'stub description',
+                'title'        => 'stub title',
+                'description'  => 'stub description',
             ],
-            __DIR__ . '/assets/GoogleBuilder1.xml',
+            __DIR__ . '/assets/BuilderDelegate1.xml',
         ];
     }
 }
