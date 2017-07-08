@@ -3,10 +3,10 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * Class OpenGraphBuilderTest
+ * Class GoogleBuilderTest
  * @package Utlime\SocialMetaTags
  */
-class OpenGraphBuilderTest extends TestCase
+class GoogleBuilderTest extends TestCase
 {
     /**
      * @var BuilderInterface
@@ -15,7 +15,7 @@ class OpenGraphBuilderTest extends TestCase
 
     public function setUp()
     {
-        $this->builder = new OpenGraphBuilder();
+        $this->builder = new GoogleBuilder();
     }
 
     public function tearDown()
@@ -41,11 +41,10 @@ class OpenGraphBuilderTest extends TestCase
     {
         yield [
             [
-                'title'       => 'stub title',
+                'name'        => 'stub title',
                 'description' => 'stub description',
-                'og:type'     => 'website'
             ],
-            __DIR__ . '/assets/OpenGraphBuilder1.xml',
+            __DIR__ . '/assets/GoogleBuilder1.xml',
         ];
     }
 }
