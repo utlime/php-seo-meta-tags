@@ -39,6 +39,8 @@ class OpenGraphBuilderTest extends TestCase
 
     public function dataBuildSet()
     {
+        yield [[], __DIR__ . '/assets/EmptyBuilder0.xml'];
+
         yield [
             [
                 'og:type'     => 'website',

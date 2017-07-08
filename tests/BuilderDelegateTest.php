@@ -45,6 +45,8 @@ class BuilderDelegateTest extends TestCase
 
     public function dataBuildSet()
     {
+        yield [[], __DIR__ . '/assets/EmptyBuilder0.xml'];
+
         yield [
             [
                 'title'        => 'stub title',

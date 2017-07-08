@@ -39,6 +39,8 @@ class TwitterBuilderTest extends TestCase
 
     public function dataBuildSet()
     {
+        yield [[], __DIR__ . '/assets/EmptyBuilder0.xml'];
+
         yield [
             [
                 'twitter:card' => 'summary',
