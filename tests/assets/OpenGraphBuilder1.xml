@@ -1,5 +1,5 @@
 <head>
-    <meta name="og:type" content="website" />
-    <meta name="og:title" content="stub title" />
-    <meta name="og:description" content="stub description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="stub title" />
+    <meta property="og:description" content="stub description" />
 </head>

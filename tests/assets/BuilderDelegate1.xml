@@ -1,10 +1,14 @@
 <head>
     <title>stub title</title>
     <meta name="description" content="stub description" />
-    <meta itemprop="name" content="stub title" />
-    <meta itemprop="description" content="stub description" />
+    <link href="stub canonical" rel="canonical"/>
     <meta name="twitter:title" content="stub title" />
     <meta name="twitter:description" content="stub description" />
-    <meta name="og:title" content="stub title" />
-    <meta name="og:description" content="stub description" />
+    <meta name="twitter:image" content="stub image" />
+    <meta property="og:title" content="stub title" />
+    <meta property="og:description" content="stub description" />
+    <meta property="og:locale" content="stub language" />
+    <meta property="og:url" content="stub canonical" />
+    <meta property="og:image" content="stub image" />
+    <meta property="og:image" content="stub og:image" />
 </head>

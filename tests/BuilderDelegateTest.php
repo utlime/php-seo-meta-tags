@@ -17,8 +17,6 @@ class BuilderDelegateTest extends TestCase
     {
         $this->builder = new BuilderDelegate(
             new CommonBuilder(),
-            new SearchBuilder(),
-            new GoogleBuilder(),
             new TwitterBuilder(),
             new OpenGraphBuilder()
         );
@@ -51,6 +49,10 @@ class BuilderDelegateTest extends TestCase
             [
                 'title'        => 'stub title',
                 'description'  => 'stub description',
+                'language'     => 'stub language',
+                'canonical'    => 'stub canonical',
+                'image'        => 'stub image',
+                'og:image'     => 'stub og:image',
             ],
             __DIR__ . '/assets/BuilderDelegate1.xml',
         ];
