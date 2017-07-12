@@ -1,5 +1,5 @@
 {
-    "name": "utlime/php-social-meta-tags",
+    "name": "utlime/seo-meta-tags",
     "description": "Social Meta Tags: Open Graph Tags, Facebook, Twitter, LinkedIn, Google+, Pinterest and etc",
     "type": "library",
     "license": "MIT",
@@ -9,6 +9,7 @@
             "email": "utlime@gmail.com"
         }
     ],
+    "keywords": ["seo", "social", "meta", "og", "open graph", "twitter card"],
     "autoload" : {
         "psr-4" : {"Utlime\\SocialMetaTags\\" : "src/"}
     },
