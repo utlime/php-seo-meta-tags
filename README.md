@@ -48,11 +48,11 @@ As result you will have the follow
 ## Extending
 For extending or modifying you just need to implement interface
 ```php
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 /**
  * Interface BuilderInterface
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  */
 interface BuilderInterface
 {
@@ -74,6 +74,6 @@ interface BuilderInterface
 
 ## Supported tags
 you can check all supported tags in classes:
-- \Utlime\SocialMetaTags\CommonBuilder
-- \Utlime\SocialMetaTags\OpenGraphBuilder
-- \Utlime\SocialMetaTags\TwitterBuilder
+- \Utlime\SeoMetaTags\CommonBuilder
+- \Utlime\SeoMetaTags\OpenGraphBuilder
+- \Utlime\SeoMetaTags\TwitterBuilder

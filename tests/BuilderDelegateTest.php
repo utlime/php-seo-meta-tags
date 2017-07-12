@@ -1,10 +1,10 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class BuilderDelegateTest
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  */
 class BuilderDelegateTest extends TestCase
 {

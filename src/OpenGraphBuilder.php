@@ -1,8 +1,8 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 /**
  * Class OpenGraphAbstractBuilder
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  * @link http://ogp.me/ - specification
  */
 class OpenGraphBuilder extends AbstractBuilder

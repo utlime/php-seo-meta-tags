@@ -1,8 +1,8 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 /**
  * Class BuilderDelegate
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  */
 class BuilderDelegate implements BuilderInterface
 {

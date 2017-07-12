@@ -1,10 +1,10 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class TwitterBuilderTest
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  */
 class TwitterBuilderTest extends TestCase
 {

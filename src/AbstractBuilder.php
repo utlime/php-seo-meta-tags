@@ -1,8 +1,8 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 /**
  * Class AbstractBuilder
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  */
 abstract class AbstractBuilder implements BuilderInterface
 {

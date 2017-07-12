@@ -11,10 +11,10 @@
     ],
     "keywords": ["seo", "social", "meta", "og", "open graph", "twitter card"],
     "autoload" : {
-        "psr-4" : {"Utlime\\SocialMetaTags\\" : "src/"}
+        "psr-4" : {"Utlime\\SeoMetaTags\\" : "src/"}
     },
     "autoload-dev" : {
-        "psr-4" : {"Utlime\\SocialMetaTags\\" : "tests/"}
+        "psr-4" : {"Utlime\\SeoMetaTags\\" : "tests/"}
     },
     "require": {
         "php": "^5.6 || ^7.0"

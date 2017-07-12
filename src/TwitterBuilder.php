@@ -1,8 +1,8 @@
-<?php namespace Utlime\SocialMetaTags;
+<?php namespace Utlime\SeoMetaTags;
 
 /**
  * Class TwitterAbstractBuilder
- * @package Utlime\SocialMetaTags
+ * @package Utlime\SeoMetaTags
  * @link https://dev.twitter.com/cards/markup - specification
  */
 class TwitterBuilder extends AbstractBuilder
