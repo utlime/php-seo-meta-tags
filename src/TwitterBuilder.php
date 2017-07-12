@@ -37,8 +37,7 @@ class TwitterBuilder extends AbstractBuilder
             ->addRule('twitter:app:url:ipad', [$this, 'ruleCommon'])
             ->addRule('twitter:app:name:googleplay', [$this, 'ruleCommon'])
             ->addRule('twitter:app:id:googleplay', [$this, 'ruleCommon'])
-            ->addRule('twitter:app:url:googleplay', [$this, 'ruleCommon'])
-        ;
+            ->addRule('twitter:app:url:googleplay', [$this, 'ruleCommon']);
     }
 
     /**

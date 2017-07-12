@@ -1,6 +1,7 @@
 <head>
     <title>stub title</title>
     <meta name="description" content="stub description" />
+    <meta content="stub language" http-equiv="content-language"/>
     <link href="stub canonical" rel="canonical"/>
     <meta name="twitter:title" content="stub title" />
     <meta name="twitter:description" content="stub description" />
