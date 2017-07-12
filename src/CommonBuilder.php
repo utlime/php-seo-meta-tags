@@ -16,6 +16,8 @@ class CommonBuilder extends AbstractBuilder
             ->addRule('description', [$this, 'ruleCommon'])
             ->addRule('robots', [$this, 'ruleCommon'])
             ->addRule('canonical', [$this, 'ruleLink'])
+            ->addRule('prev', [$this, 'ruleLink'])
+            ->addRule('next', [$this, 'ruleLink'])
             ->addRule('viewport', [$this, 'ruleCommon'])
             ->addRule('content-language', [$this, 'ruleHTTPEquiv'])
             ->addAlias('language', 'content-language')
