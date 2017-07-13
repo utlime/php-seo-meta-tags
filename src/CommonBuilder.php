@@ -18,6 +18,8 @@ class CommonBuilder extends AbstractBuilder
             ->addRule('canonical', [$this, 'ruleLink'])
             ->addRule('prev', [$this, 'ruleLink'])
             ->addRule('next', [$this, 'ruleLink'])
+            ->addRule('alternate', [$this, 'ruleLink'])
+            ->addRule('rss', [$this, 'ruleRSS'])
             ->addRule('viewport', [$this, 'ruleCommon'])
             ->addRule('content-language', [$this, 'ruleHTTPEquiv'])
             ->addAlias('language', 'content-language')
@@ -72,14 +74,28 @@ class CommonBuilder extends AbstractBuilder
     }
 
     /**
-     * @param string $href
-     * @param string $rel
+     * @param string      $href
+     * @param string      $rel
+     * @param null|string $type
      */
-    protected function ruleLink($href, $rel)
+    protected function ruleLink($href, $rel, $type = null)
     {
         $meta = $this->getMeta()->addChild('link');
 
         $meta->addAttribute('rel', $rel);
         $meta->addAttribute('href', $href);
+
+        if ($type !== null) {
+            $meta->addAttribute('type', $type);
+        }
+    }
+
+    /**
+     * @param string $href
+     * @param string $rel
+     */
+    protected function ruleRSS($href, $rel)
+    {
+        $this->ruleLink($href, $rel, 'application/rss+xml');
     }
 }
