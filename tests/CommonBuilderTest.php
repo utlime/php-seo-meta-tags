@@ -13,12 +13,12 @@ class CommonBuilderTest extends TestCase
      */
     protected $builder;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->builder = new CommonBuilder();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->builder = null;
     }
