@@ -11,7 +11,7 @@ https://moz.com/blog/seo-meta-tags
 ## Installation
 You can install directly via Composer:
 ```bash
-$ composer require "utlime/seo-meta-tags":"^1.0"
+$ composer require "utlime/seo-meta-tags":"^2.0"
 ```
 
 ## Basic usage
