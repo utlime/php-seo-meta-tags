@@ -13,7 +13,7 @@ class BuilderDelegateTest extends TestCase
      */
     protected $builder;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->builder = new BuilderDelegate(
             new CommonBuilder(),
@@ -22,7 +22,7 @@ class BuilderDelegateTest extends TestCase
         );
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->builder = null;
     }
